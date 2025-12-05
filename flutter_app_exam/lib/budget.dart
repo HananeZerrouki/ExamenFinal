@@ -24,13 +24,13 @@ class BudgetPage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             // TITRE BUDGET
-            const Text(
-              "Budget",
-              style: TextStyle(
-                fontSize: 28,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+            //const Text(
+              //"Budget",
+              //style: TextStyle(
+                //fontSize: 28,
+                //fontWeight: FontWeight.bold,
+             // ),
+            //),
             const SizedBox(height: 20),
             // Lignes du budget
             _budgetLine("Budget", "30000 \$"),
