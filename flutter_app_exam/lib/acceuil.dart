@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/bottomNavigation.dart';
 import '../widgets/infocard.dart';
-
 class AcceuilPage extends StatelessWidget {
     const AcceuilPage({super.key});
   @override
@@ -24,25 +23,18 @@ class AcceuilPage extends StatelessWidget {
             Container(
               height: 180,
               width: double.infinity,
-              //color: Colors.grey.shade300,
-              
-              child: Image.asset(
+                           child: Image.asset(
                 'assets/images/hanane1.jpeg',  
-                //fit: BoxFit.cover, // Ajuste l'image à la taille
-              //child: Center(child: Text("Image Maquette")),
             ),
             ),
-
             SizedBox(height: 20),
             Text(
               "Conception et Installation\nde panneaux publicitaires",
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 18),
             ),
-
             SizedBox(height: 20),
-
-            Row(
+Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 InfoCard(title: "Budget", value: "30000 \$", color: Colors.green),
