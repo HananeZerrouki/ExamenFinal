@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widgets/bottomNavigation.dart';
-
 class NotificationsPage extends StatelessWidget {
   const NotificationsPage({super.key});
-
-  @override
+@override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -27,7 +25,7 @@ class NotificationsPage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Column(
           children: [
-            const SizedBox(height: 20), // espace avant la liste
+            const SizedBox(height: 20), // espace avant la liste de notifications
             Column(
               children: [
                 _notif("Nouvelle tâche « créer logos » assignée à Hanane."),
