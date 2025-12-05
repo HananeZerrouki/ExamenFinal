@@ -15,7 +15,7 @@ class BudgetPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // IMAGE EN HAUT
+            // je met l'image ici avec les mesures necessaire 
             Image.asset(
               "assets/images/budget.jpg",
               height: 180,
@@ -37,7 +37,7 @@ class BudgetPage extends StatelessWidget {
             _budgetLine("Dépenses RH", "3000 \$"),
             _budgetLine("Dépenses IT", "7000 \$"),
             _budgetLine("Dépenses Marketing", "8500 \$"),
-            _budgetLine("Bénéfices", "11500 \$"), // visible maintenant
+            _budgetLine("Bénéfices", "11500 \$"), 
           ],
         ),
       ),
