@@ -1,18 +1,14 @@
 import 'package:flutter/material.dart';
-import '../widgets/bottomNavigation.dart'; // Chemin vers ta page principale
-
+import '../widgets/bottomNavigation.dart'; 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
-
   @override
   State<LoginPage> createState() => _LoginPageState();
 }
-
 class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-
   void _login() {
     if (_formKey.currentState!.validate()) {
       Navigator.pushReplacement(
@@ -21,8 +17,7 @@ class _LoginPageState extends State<LoginPage> {
       );
     }
   }
-
-  @override
+@override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
