@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/bottomNavigation.dart';
+import 'acceuil.dart';
 class NotificationsPage extends StatelessWidget {
   const NotificationsPage({super.key});
 @override
@@ -45,9 +46,20 @@ class NotificationsPage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(12),
                     ),
                   ),
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
+                  //onPressed: () {
+                    //Navigator.pop(context);
+                  //},
+onPressed: () {
+  Navigator.pushReplacement(
+    context,
+    MaterialPageRoute(builder: (context) => const AcceuilPage()),
+  );
+},
+
+
+
+
+
                   child: const Text(
                     "Retour",
                     style: TextStyle(fontSize: 16, color: Colors.white),
