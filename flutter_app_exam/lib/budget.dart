@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widgets/bottomNavigation.dart';
-
 class BudgetPage extends StatelessWidget {
   const BudgetPage({super.key});
-
-  @override
+ @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -45,8 +43,7 @@ class BudgetPage extends StatelessWidget {
       ),
     );
   }
-
-  Widget _budgetLine(String label, String value) {
+Widget _budgetLine(String label, String value) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 6), // réduit l'espace pour tout voir
       child: Row(
