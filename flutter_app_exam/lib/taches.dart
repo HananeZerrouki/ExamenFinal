@@ -1,37 +1,31 @@
-
 import 'package:flutter/material.dart';
 import 'widgets/bottomNavigation.dart';
-
 class TachesPage extends StatefulWidget {
   const TachesPage({super.key});
-
   @override
   State<TachesPage> createState() => _TachesPageState();
 }
-
 class _TachesPageState extends State<TachesPage> {
-  // 🔹 Liste des tâches (en mémoire)
+  // Liste des tâches (en mémoire)
   final List<Map<String, String>> taches = [
     {"nom": "Créer la maquette", "statut": "Fini"},
     {"nom": "Valider le visuel", "statut": "En cours"},
     {"nom": "Installer les panneaux", "statut": "En cours"},
     {"nom":"acheter les machines","statut":"fini"},
   ];
-
-  @override
+ @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Tâches"),
         centerTitle: true,
       ),
-
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // 🔹 Image
+            // Image
             Center(
               child: SizedBox(
                 width: 180,
@@ -41,10 +35,8 @@ class _TachesPageState extends State<TachesPage> {
                 ),
               ),
             ),
-
             const SizedBox(height: 20),
-
-            // 🔹 Tableau dynamique
+           // Tableau dynamique
             Container(
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.grey, width: 1),
@@ -60,7 +52,7 @@ class _TachesPageState extends State<TachesPage> {
                   1: FlexColumnWidth(1),
                 },
                 children: [
-                  // 🔹 Ligne titre
+                  // Ligne titre
                   const TableRow(
                     decoration: BoxDecoration(color: Color(0xFFEFEFEF)),
                     children: [
@@ -74,7 +66,7 @@ class _TachesPageState extends State<TachesPage> {
                       ),
                     ],
                   ),
-                  // 🔹 Génération dynamique des lignes
+                  //Génération dynamique des lignes je vais expliquer ca en detail dans le fichier word
                   for (var tache in taches)
                     TableRow(
                       children: [
@@ -89,7 +81,7 @@ class _TachesPageState extends State<TachesPage> {
         ),
       ),
 
-      // 🔹 Barre de navigation
+      //Barre de navigation
       bottomNavigationBar: const AppBottomNav(currentIndex: 2),
     );
   }
