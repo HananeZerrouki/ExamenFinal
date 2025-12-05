@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
 import 'connexion.dart'; // ✔️ importe ta page de connexion
-
-
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LoginPage(), // <--- nom exact
+      home: const LoginPage(), // on determine ici la premiere page qu'on aura des l'execution de notre application
     );
   }
 }

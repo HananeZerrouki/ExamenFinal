@@ -80,7 +80,6 @@ class _TachesPageState extends State<TachesPage> {
           ],
         ),
       ),
-
       //Barre de navigation
       bottomNavigationBar: const AppBottomNav(currentIndex: 2),
     );
